@@ -112,7 +112,7 @@ def get_recommendation():
         recommended_items = dict()
         result = dict()
         result['user_id'] = u
-        result['film_id_array'] = recommend(u)
+        result['product_id_array'] = recommend(u)
         recommended_items[u] = result
         arr.append(recommended_items)
     return arr
@@ -126,7 +126,7 @@ def get_recommendation_by_user(user_id):
     for u in list_users:
         if (u == user_id):
             result['user_id'] = u
-            result['film_id_array'] = recommend(u)
+            result['product_id_array'] = recommend(u)
     return result
 
 
