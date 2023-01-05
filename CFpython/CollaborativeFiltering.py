@@ -91,7 +91,7 @@ def recommend(u):
             if rating > 0:
                 recommended_items.append(i)
 
-    return recommended_items
+    return recommended_items[0:5] 
 
 
 def print_recommendation():
